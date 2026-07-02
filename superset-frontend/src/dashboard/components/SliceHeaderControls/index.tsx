@@ -57,6 +57,7 @@ import { useDrillDetailMenuItems } from 'src/components/Chart/useDrillDetailMenu
 import { LOG_ACTIONS_CHART_DOWNLOAD_AS_IMAGE } from 'src/logger/LogUtils';
 import { MenuKeys, RootState } from 'src/dashboard/types';
 import DrillDetailModal from 'src/components/Chart/DrillDetail/DrillDetailModal';
+import { openInNewTab } from 'src/utils/navigationUtils';
 import { usePermissions } from 'src/hooks/usePermissions';
 import { useDatasetDrillInfo } from 'src/hooks/apiResources/datasets';
 import { ResourceStatus } from 'src/hooks/apiResources/apiResources';
@@ -263,7 +264,7 @@ const SliceHeaderControls = (
         props.logExploreChart?.(props.slice.slice_id);
         if (domEvent.metaKey || domEvent.ctrlKey) {
           domEvent.preventDefault();
-          window.open(props.exploreUrl, '_blank');
+          openInNewTab(props.exploreUrl);
         } else {
           history.push(props.exploreUrl);
         }
@@ -670,8 +671,10 @@ const SliceHeaderControls = (
           aria-label={t('More Options')}
           aria-haspopup="true"
           css={theme => css`
-            padding: ${theme.sizeUnit * 2}px;
-            padding-right: 0px;
+            width: ${theme.sizeUnit * 8}px;
+            height: ${theme.sizeUnit * 8}px;
+            padding: 0;
+            margin-right: -${theme.sizeUnit * 2}px;
           `}
         >
           <VerticalDotsTrigger />
