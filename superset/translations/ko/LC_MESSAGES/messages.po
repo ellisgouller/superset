@@ -295,7 +295,7 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s column"
 msgid_plural "%s columns"
-msgstr[0] "컬럼 추가"
+msgstr[0] "%s 열"
 
 #, python-format
 msgid "%s column(s)"
@@ -318,7 +318,7 @@ msgstr "데이터베이스"
 #, fuzzy, python-format
 msgid "%s item"
 msgid_plural "%s items"
-msgstr[0] "5분"
+msgstr[0] "%s 항목"
 
 #, fuzzy, python-format
 msgid "%s item(s)"
@@ -333,12 +333,12 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s metric"
 msgid_plural "%s metrics"
-msgstr[0] "메트릭"
+msgstr[0] "%s 지표"
 
 #, fuzzy, python-format
 msgid "%s min ago"
 msgid_plural "%s min ago"
-msgstr[0] "월"
+msgstr[0] "%s분 전"
 
 #, python-format
 msgid "%s operator(s)"
@@ -356,12 +356,12 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s out of %s column"
 msgid_plural "%s out of %s columns"
-msgstr[0] "컬럼 목록"
+msgstr[0] "%s개의 열 중 %s개"
 
 #, fuzzy, python-format
 msgid "%s out of %s metric"
 msgid_plural "%s out of %s metrics"
-msgstr[0] "메트릭"
+msgstr[0] "%s개 중 %s개 지표"
 
 #, fuzzy, python-format
 msgid "%s out of %s selected"
@@ -398,7 +398,7 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s second"
 msgid_plural "%s seconds"
-msgstr[0] "30초"
+msgstr[0] "%s 초"
 
 #, python-format
 msgid "%s semantic view(s) added"
@@ -1214,7 +1214,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Added to 1 dashboard"
 msgid_plural "Added to %s dashboards"
-msgstr[0] "대시보드 추가"
+msgstr[0] "%s 대시보드에 추가됨"
 
 #, fuzzy
 msgid "Additional Parameters"
@@ -1662,33 +1662,45 @@ msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였
 msgid "An error occurred while fetching created by values: %s"
 msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dashboard owner values: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "대시보드 소유자 값을 가져오는 중 오류가 발생했습니다: %s"
 
 #, fuzzy
 msgid "An error occurred while fetching dashboards"
 msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dashboards: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "대시보드를 가져오는 중 오류가 발생했습니다: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching database related data: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "데이터베이스 관련 데이터를 가져오는 중 오류가 발생했습니다: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching database values: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "데이터베이스 값을 가져오는 중 오류가 발생했습니다: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dataset datasource values: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "데이터셋 데이터소스 값을 가져오는 중 오류가 발생했습니다: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dataset related data: %s"
-msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
+msgstr "데이터셋 관련 데이터를 가져오는 중 오류가 발생했습니다: %s"
 
 msgid "An error occurred while fetching function names."
 msgstr ""
@@ -2565,6 +2577,9 @@ msgstr ""
 #, fuzzy
 msgid "COPY QUERY"
 msgstr "Query 저장"
+
+msgid "Copy query"
+msgstr ""
 
 msgid "CREATE TABLE AS"
 msgstr ""
@@ -4901,9 +4916,11 @@ msgstr "삭제"
 msgid "Delete %s"
 msgstr "삭제"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Delete %s?"
-msgstr "삭제"
+msgstr "%s 삭제하시겠습니까?"
 
 msgid "Delete Annotation?"
 msgstr "주석"
@@ -5023,7 +5040,7 @@ msgstr[0] ""
 #, python-format
 msgid "Deleted %(num)d dataset"
 msgid_plural "Deleted %(num)d datasets"
-msgstr[0] "데이터베이스 선택"
+msgstr[0] "%(num)d개의 데이터셋이 삭제되었습니다"
 
 #, python-format
 msgid "Deleted %(num)d report schedule"
@@ -5048,7 +5065,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Deleted %(num)d theme"
 msgid_plural "Deleted %(num)d themes"
-msgstr[0] "데이터베이스 선택"
+msgstr[0] "%(num)d개의 테마가 삭제되었습니다"
 
 #, fuzzy, python-format
 msgid "Deleted %s"
@@ -5086,9 +5103,11 @@ msgstr "삭제"
 msgid "Deleted users: %s"
 msgstr "삭제"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Deleted: %s"
-msgstr "삭제"
+msgstr "삭제됨: %s"
 
 msgid ""
 "Deleting a tab will remove all content within it and will deactivate any "
@@ -6426,6 +6445,9 @@ msgstr ""
 msgid "FIT DATA"
 msgstr "차트 수정"
 
+msgid "Fit data"
+msgstr ""
+
 msgid "FRI"
 msgstr ""
 
@@ -7335,9 +7357,11 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Import %s"
-msgstr "대시보드 가져오기"
+msgstr "가져오기 %s"
 
 #, fuzzy
 msgid "Import Error"

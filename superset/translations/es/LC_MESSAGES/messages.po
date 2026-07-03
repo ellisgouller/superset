@@ -269,9 +269,11 @@ msgstr ""
 " una programación con un intervalo mínimo de %(minimum_interval)d minutos"
 " por ejecución."
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "%(rows)d rows returned"
-msgstr "líneas obtenidas"
+msgstr "%(rows)d filas devueltas"
 
 #, fuzzy, python-format
 msgid "%(suggestion)s instead of \"%(undefinedParameter)s?\""
@@ -2834,8 +2836,8 @@ msgid ""
 " not applying, ask your Superset administrator to adjust the HTML "
 "sanitization configuration."
 msgstr ""
-"Los estilos CSS pueden ser eliminados por la sanitización HTML del lado del"
-" servidor. Si los estilos no se aplican, solicite al administrador de "
+"Los estilos CSS pueden ser eliminados por la sanitización HTML del lado "
+"del servidor. Si los estilos no se aplican, solicite al administrador de "
 "Superset que ajuste la configuración de sanitización HTML."
 
 msgid "CSS template"

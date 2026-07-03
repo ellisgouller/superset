@@ -237,9 +237,11 @@ msgstr "giorno"
 msgid "%s ENCRYPTED EXTRA"
 msgstr "Sicurezza"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "%s Error"
-msgstr "Errore..."
+msgstr "%s Errore"
 
 #, fuzzy, python-format
 msgid "%s PASSWORD"
@@ -261,9 +263,11 @@ msgstr ""
 msgid "%s SSH TUNNEL PRIVATE KEY PASSWORD"
 msgstr ""
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "%s Selected"
-msgstr "Seleziona data finale"
+msgstr "%s selezionati"
 
 #, fuzzy, python-format
 msgid "%s Selected (%s)"
@@ -296,11 +300,13 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s column"
 msgid_plural "%s columns"
-msgstr[0] "Visualizza colonne"
+msgstr[0] "%s colonne"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "%s column(s)"
-msgstr "Visualizza colonne"
+msgstr "%s colonna/e"
 
 #, python-format
 msgid "%s day ago"
@@ -310,7 +316,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "%s hr ago"
 msgid_plural "%s hr ago"
-msgstr[0] "Errore..."
+msgstr[0] "%s ore fa"
 
 #, fuzzy, python-format
 msgid "%s imported"
@@ -319,7 +325,7 @@ msgstr "Database"
 #, fuzzy, python-format
 msgid "%s item"
 msgid_plural "%s items"
-msgstr[0] "Visualizza colonne"
+msgstr[0] "%s elementi"
 
 #, fuzzy, python-format
 msgid "%s item(s)"
@@ -334,21 +340,23 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s metric"
 msgid_plural "%s metrics"
-msgstr[0] "Mostra metrica"
+msgstr[0] "%s metriche"
 
 #, fuzzy, python-format
 msgid "%s min ago"
 msgid_plural "%s min ago"
-msgstr[0] "mese"
+msgstr[0] "%s min fa"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "%s operator(s)"
-msgstr "Seleziona operatore"
+msgstr "%s operatore/i"
 
 #, fuzzy, python-format
 msgid "%s option"
 msgid_plural "%s options"
-msgstr[0] "Seleziona operatore"
+msgstr[0] "%s opzioni"
 
 #, python-format
 msgid "%s option(s)"
@@ -357,12 +365,12 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s out of %s column"
 msgid_plural "%s out of %s columns"
-msgstr[0] "Visualizza colonne"
+msgstr[0] "%s su %s colonne"
 
 #, fuzzy, python-format
 msgid "%s out of %s metric"
 msgid_plural "%s out of %s metrics"
-msgstr[0] "Mostra metrica"
+msgstr[0] "%s su %s metriche"
 
 #, fuzzy, python-format
 msgid "%s out of %s selected"
@@ -375,17 +383,17 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s record"
 msgid_plural "%s records..."
-msgstr[0] "Errore..."
+msgstr[0] "%s record..."
 
 #, fuzzy, python-format
 msgid "%s record..."
 msgid_plural "%s records..."
-msgstr[0] "Errore..."
+msgstr[0] "%s record..."
 
 #, fuzzy, python-format
 msgid "%s row"
 msgid_plural "%s rows"
-msgstr[0] "Errore..."
+msgstr[0] "%s righe"
 
 #, python-format
 msgid "%s s ago"
@@ -399,7 +407,7 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s second"
 msgid_plural "%s seconds"
-msgstr[0] "Errore..."
+msgstr[0] "%s secondi"
 
 #, python-format
 msgid "%s semantic view(s) added"
@@ -1218,7 +1226,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Added to 1 dashboard"
 msgid_plural "Added to %s dashboards"
-msgstr[0] "Aggiungi ad una nuova dashboard"
+msgstr[0] "Aggiunto a %s dashboard"
 
 #, fuzzy
 msgid "Additional Parameters"
@@ -1663,9 +1671,13 @@ msgstr "Errore nel recupero dei metadati della tabella"
 msgid "An error occurred while fetching available views"
 msgstr "Errore nel recupero dei metadati della tabella"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching chart owners values: %s"
-msgstr "Errore nel creare il datasource"
+msgstr ""
+"Si è verificato un errore durante il recupero dei valori dei proprietari "
+"del grafico: %s"
 
 #, fuzzy
 msgid "An error occurred while fetching connections"
@@ -1675,32 +1687,52 @@ msgstr "Errore nel recupero dei metadati della tabella"
 msgid "An error occurred while fetching created by values: %s"
 msgstr "Errore nel rendering della visualizzazione: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dashboard owner values: %s"
-msgstr "Errore nel creare il datasource"
+msgstr ""
+"Si è verificato un errore durante il recupero dei valori del proprietario"
+" del dashboard: %s"
 
 msgid "An error occurred while fetching dashboards"
 msgstr "Errore nel creare il datasource"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dashboards: %s"
-msgstr "Errore nel creare il datasource"
+msgstr "Si è verificato un errore durante il recupero delle dashboard: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching database related data: %s"
-msgstr "Errore nel recupero dei metadati della tabella"
+msgstr ""
+"Si è verificato un errore durante il recupero dei dati relativi al "
+"database: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching database values: %s"
-msgstr "Errore nel creare il datasource"
+msgstr "Si è verificato un errore durante il recupero dei valori del database: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dataset datasource values: %s"
-msgstr "Errore nel creare il datasource"
+msgstr ""
+"Si è verificato un errore durante il recupero dei valori della sorgente "
+"dati del dataset: %s"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "An error occurred while fetching dataset related data: %s"
-msgstr "Errore nel recupero dei metadati della tabella"
+msgstr ""
+"Si è verificato un errore durante il recupero dei dati correlati al "
+"dataset: %s"
 
 #, fuzzy
 msgid "An error occurred while fetching function names."
@@ -2587,6 +2619,9 @@ msgstr ""
 msgid "COPY QUERY"
 msgstr "Query vuota?"
 
+msgid "Copy query"
+msgstr ""
+
 msgid "CREATE TABLE AS"
 msgstr "Permetti CREATE TABLE AS"
 
@@ -2964,7 +2999,7 @@ msgstr "Azione"
 #, fuzzy, python-format
 msgid "Chart Owner: %s"
 msgid_plural "Chart Owners: %s"
-msgstr[0] "Opzioni del grafico"
+msgstr[0] "Proprietari del grafico: %s"
 
 #, fuzzy
 msgid "Chart Source"
@@ -4933,9 +4968,11 @@ msgstr "Cancella"
 msgid "Delete %s"
 msgstr "Cancella"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Delete %s?"
-msgstr "Cancella"
+msgstr "Eliminare %s?"
 
 msgid "Delete Annotation?"
 msgstr ""
@@ -5051,12 +5088,12 @@ msgstr[0] ""
 #, python-format
 msgid "Deleted %(num)d dashboard"
 msgid_plural "Deleted %(num)d dashboards"
-msgstr[0] "Seleziona una dashboard"
+msgstr[0] "Eliminati %(num)d dashboard"
 
 #, python-format
 msgid "Deleted %(num)d dataset"
 msgid_plural "Deleted %(num)d datasets"
-msgstr[0] "Seleziona data finale"
+msgstr[0] "Eliminati %(num)d dataset"
 
 #, python-format
 msgid "Deleted %(num)d report schedule"
@@ -5081,7 +5118,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Deleted %(num)d theme"
 msgid_plural "Deleted %(num)d themes"
-msgstr[0] "Seleziona data finale"
+msgstr[0] "Eliminati %(num)d temi"
 
 #, fuzzy, python-format
 msgid "Deleted %s"
@@ -5119,9 +5156,11 @@ msgstr "Cancella"
 msgid "Deleted users: %s"
 msgstr "Cancella"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Deleted: %s"
-msgstr "Cancella"
+msgstr "Eliminato: %s"
 
 msgid ""
 "Deleting a tab will remove all content within it and will deactivate any "
@@ -6470,6 +6509,9 @@ msgstr ""
 msgid "FIT DATA"
 msgstr "Mostra database"
 
+msgid "Fit data"
+msgstr ""
+
 msgid "FRI"
 msgstr ""
 
@@ -7391,9 +7433,11 @@ msgstr ""
 msgid "Import"
 msgstr "Importa"
 
+# Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
+# placeholder]
 #, python-format
 msgid "Import %s"
-msgstr "Importa"
+msgstr "Importa %s"
 
 #, fuzzy
 msgid "Import Error"

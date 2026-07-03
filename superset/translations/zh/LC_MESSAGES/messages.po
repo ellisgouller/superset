@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: zhouyao94@qq.com\n"
 "POT-Creation-Date: 2026-06-08 12:27-0700\n"
 "PO-Revision-Date: 2019-01-04 22:19+0800\n"
-"Last-Translator: cdmikechen \n"
+"Last-Translator: cdmikechen\n"
 "Language: zh\n"
 "Language-Team: zh <benedictjin2016@gmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -315,7 +315,7 @@ msgstr "%s 列"
 #, fuzzy, python-format
 msgid "%s day ago"
 msgid_plural "%s days ago"
-msgstr[0] "1天之前"
+msgstr[0] "%s 天前"
 
 #, fuzzy, python-format
 msgid "%s hr ago"
@@ -344,12 +344,12 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s metric"
 msgid_plural "%s metrics"
-msgstr[0] "排序指标"
+msgstr[0] "%s 指标"
 
 #, fuzzy, python-format
 msgid "%s min ago"
 msgid_plural "%s min ago"
-msgstr[0] "月"
+msgstr[0] "%s 分钟前"
 
 #, python-format
 msgid "%s operator(s)"
@@ -367,12 +367,12 @@ msgstr "%s 个选项"
 #, fuzzy, python-format
 msgid "%s out of %s column"
 msgid_plural "%s out of %s columns"
-msgstr[0] "自定义列"
+msgstr[0] "%s 列中的 %s 列"
 
 #, fuzzy, python-format
 msgid "%s out of %s metric"
 msgid_plural "%s out of %s metrics"
-msgstr[0] "排序指标"
+msgstr[0] "%s 个指标中的 %s 个"
 
 #, fuzzy, python-format
 msgid "%s out of %s selected"
@@ -400,7 +400,7 @@ msgstr[0] "%s 行"
 #, fuzzy, python-format
 msgid "%s s ago"
 msgid_plural "%s s ago"
-msgstr[0] "30天之前"
+msgstr[0] "%s 秒前"
 
 #, python-format
 msgid "%s saved metric(s)"
@@ -409,7 +409,7 @@ msgstr "%s 保存的指标"
 #, fuzzy, python-format
 msgid "%s second"
 msgid_plural "%s seconds"
-msgstr[0] "5秒"
+msgstr[0] "%s 秒"
 
 #, python-format
 msgid "%s semantic view(s) added"
@@ -1236,7 +1236,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Added to 1 dashboard"
 msgid_plural "Added to %s dashboards"
-msgstr[0] "添加到看板"
+msgstr[0] "已添加至 %s 个仪表板"
 
 msgid "Additional Parameters"
 msgstr "附加参数"
@@ -2598,6 +2598,9 @@ msgstr "最近"
 #, fuzzy
 msgid "COPY QUERY"
 msgstr "复制查询URL"
+
+msgid "Copy query"
+msgstr ""
 
 msgid "CREATE TABLE AS"
 msgstr "允许 CREATE TABLE AS"
@@ -6535,6 +6538,9 @@ msgstr "二月"
 #, fuzzy
 msgid "FIT DATA"
 msgstr "编辑数据集"
+
+msgid "Fit data"
+msgstr ""
 
 msgid "FRI"
 msgstr "星期五"

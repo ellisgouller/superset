@@ -314,7 +314,7 @@ msgstr "%s 列"
 #, fuzzy, python-format
 msgid "%s day ago"
 msgid_plural "%s days ago"
-msgstr[0] "1 天之前"
+msgstr[0] "%s 天前"
 
 #, fuzzy, python-format
 msgid "%s hr ago"
@@ -343,12 +343,12 @@ msgstr ""
 #, fuzzy, python-format
 msgid "%s metric"
 msgid_plural "%s metrics"
-msgstr[0] "排序指標"
+msgstr[0] "%s 個指標"
 
 #, fuzzy, python-format
 msgid "%s min ago"
 msgid_plural "%s min ago"
-msgstr[0] "月"
+msgstr[0] "%s 分鐘前"
 
 #, python-format
 msgid "%s operator(s)"
@@ -366,12 +366,12 @@ msgstr "%s 個選項"
 #, fuzzy, python-format
 msgid "%s out of %s column"
 msgid_plural "%s out of %s columns"
-msgstr[0] "自定義列"
+msgstr[0] "%s 個欄位（共 %s 個）"
 
 #, fuzzy, python-format
 msgid "%s out of %s metric"
 msgid_plural "%s out of %s metrics"
-msgstr[0] "排序指標"
+msgstr[0] "%s 個指標中的 %s 個"
 
 #, fuzzy, python-format
 msgid "%s out of %s selected"
@@ -399,7 +399,7 @@ msgstr[0] "%s 行"
 #, fuzzy, python-format
 msgid "%s s ago"
 msgid_plural "%s s ago"
-msgstr[0] "30 天之前"
+msgstr[0] "%s 秒前"
 
 #, python-format
 msgid "%s saved metric(s)"
@@ -408,7 +408,7 @@ msgstr "%s 保存的指標"
 #, fuzzy, python-format
 msgid "%s second"
 msgid_plural "%s seconds"
-msgstr[0] "5 秒"
+msgstr[0] "%s 秒"
 
 #, python-format
 msgid "%s semantic view(s) added"
@@ -1234,7 +1234,7 @@ msgstr[0] ""
 #, fuzzy, python-format
 msgid "Added to 1 dashboard"
 msgid_plural "Added to %s dashboards"
-msgstr[0] "增加到看板"
+msgstr[0] "已新增至 %s 個儀表板"
 
 msgid "Additional Parameters"
 msgstr "附加参數"
@@ -2600,6 +2600,9 @@ msgstr "最近"
 #, fuzzy
 msgid "COPY QUERY"
 msgstr "複製查詢 URL"
+
+msgid "Copy query"
+msgstr ""
 
 msgid "CREATE TABLE AS"
 msgstr "允許 CREATE TABLE AS"
@@ -6539,6 +6542,9 @@ msgstr "二月"
 #, fuzzy
 msgid "FIT DATA"
 msgstr "編輯數據集"
+
+msgid "Fit data"
+msgstr ""
 
 msgid "FRI"
 msgstr "星期五"
