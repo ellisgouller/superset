@@ -5245,7 +5245,6 @@ msgid ""
 "Defines the value that determines the boundary between different regions "
 "or levels in the data "
 msgstr ""
-"\n"
 "Define el valor que determina el límite entre diferentes regiones o "
 "niveles en los datos "
 

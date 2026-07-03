@@ -558,7 +558,7 @@ msgstr ""
 "\n"
 "<%(url)s|Tūhura i roto i Superset>\n"
 "\n"
-"%(table)s"
+"%(table)s\n"
 
 #, python-format
 msgid "+ %s more"
