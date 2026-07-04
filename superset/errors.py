@@ -241,7 +241,7 @@ class SupersetError:
             )
 
     def to_dict(self) -> dict[str, Any]:
-        rv = {"message": self.message, "error_type": self.error_type}
+        rv: dict[str, Any] = {"message": self.message, "error_type": self.error_type}
         if self.extra:
-            rv["extra"] = self.extra  # type: ignore
+            rv["extra"] = self.extra
         return rv

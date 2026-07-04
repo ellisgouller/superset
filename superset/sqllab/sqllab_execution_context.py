@@ -129,7 +129,8 @@ class SqlJsonExecutionContext:  # pylint: disable=too-many-instance-attributes
             self.catalog = database.get_default_catalog()
         if self.select_as_cta:
             schema_name = self._get_ctas_target_schema_name(database)
-            self.create_table_as_select.target_schema_name = schema_name  # type: ignore
+            ctas = cast(CreateTableAsSelect, self.create_table_as_select)
+            ctas.target_schema_name = schema_name
 
     def _get_ctas_target_schema_name(self, database: Database) -> str | None:
         if database.force_ctas_schema:

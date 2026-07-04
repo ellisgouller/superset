@@ -16,8 +16,15 @@
 # under the License.
 """Task API schemas"""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from marshmallow import fields, Schema
 from marshmallow.fields import Method
+
+if TYPE_CHECKING:
+    from superset.models.tasks import Task
 
 # RISON/JSON schemas for query parameters
 get_delete_ids_schema = {"type": "array", "items": {"type": "string"}}
@@ -114,15 +121,15 @@ class TaskResponseSchema(Schema):
         "get_subscribers", metadata={"description": subscribers_description}
     )
 
-    def get_payload_dict(self, obj: object) -> dict[str, object] | None:
+    def get_payload_dict(self, obj: Task) -> dict[str, object] | None:
         """Get payload as dictionary"""
-        return obj.payload_dict  # type: ignore[attr-defined]
+        return obj.payload_dict
 
-    def get_properties(self, obj: object) -> dict[str, object]:
+    def get_properties(self, obj: Task) -> dict[str, object]:
         """Get properties dict, filtering stack_trace if SHOW_STACKTRACE is disabled."""
         from flask import current_app
 
-        properties = dict(obj.properties_dict)  # type: ignore[attr-defined]
+        properties = dict(obj.properties_dict)
 
         # Remove stack_trace unless SHOW_STACKTRACE is enabled
         if not current_app.config.get("SHOW_STACKTRACE", False):
@@ -130,22 +137,22 @@ class TaskResponseSchema(Schema):
 
         return properties
 
-    def get_duration(self, obj: object) -> float | None:
+    def get_duration(self, obj: Task) -> float | None:
         """Get duration in seconds"""
-        return obj.duration_seconds  # type: ignore[attr-defined]
+        return obj.duration_seconds
 
-    def get_created_on_delta_humanized(self, obj: object) -> str:
+    def get_created_on_delta_humanized(self, obj: Task) -> str:
         """Get humanized time since creation"""
-        return obj.created_on_delta_humanized()  # type: ignore[attr-defined]
+        return obj.created_on_delta_humanized()
 
-    def get_subscriber_count(self, obj: object) -> int:
+    def get_subscriber_count(self, obj: Task) -> int:
         """Get number of subscribers"""
-        return obj.subscriber_count  # type: ignore[attr-defined]
+        return obj.subscriber_count
 
-    def get_subscribers(self, obj: object) -> list[dict[str, object]]:
+    def get_subscribers(self, obj: Task) -> list[dict[str, object]]:
         """Get list of subscribers with user info"""
         subscribers = []
-        for sub in obj.subscribers:  # type: ignore[attr-defined]
+        for sub in obj.subscribers:
             subscribers.append(
                 {
                     "user_id": sub.user_id,
