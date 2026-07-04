@@ -20,7 +20,7 @@ import binascii
 import logging
 import socket
 from io import StringIO
-from typing import TYPE_CHECKING
+from typing import cast, TYPE_CHECKING
 
 import paramiko
 import sshtunnel
@@ -255,7 +255,7 @@ class SSHManager:
 
 class SSHManagerFactory:
     def __init__(self) -> None:
-        self._ssh_manager = None
+        self._ssh_manager: SSHManager | None = None
 
     def init_app(self, app: Flask) -> None:
         self._ssh_manager = load_class_from_name(
@@ -264,4 +264,4 @@ class SSHManagerFactory:
 
     @property
     def instance(self) -> SSHManager:
-        return self._ssh_manager  # type: ignore
+        return cast(SSHManager, self._ssh_manager)

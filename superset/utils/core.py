@@ -1693,7 +1693,7 @@ def get_column_name_from_column(column: Column) -> str | None:
     """
     if is_adhoc_column(column):
         return None
-    return column  # type: ignore
+    return cast(str, column)
 
 
 def get_column_names_from_columns(columns: list[Column]) -> list[str]:
