@@ -130,36 +130,34 @@ const AnnotationLayerModal: FunctionComponent<AnnotationLayerModalProps> = ({
     onHide();
   };
 
-  const onSave = () => {
+  const onSave = async () => {
     if (isEditMode) {
       // Edit
       if (currentLayer?.id) {
         const update_id = currentLayer.id;
         delete currentLayer.id;
         delete currentLayer.created_by;
-        updateResource(update_id, currentLayer).then(response => {
-          if (!response) {
-            return;
-          }
-
-          hide();
-          addSuccessToast(t('Annotation template updated'));
-        });
-      }
-    } else if (currentLayer) {
-      // Create
-      createResource(currentLayer).then(response => {
+        const response = await updateResource(update_id, currentLayer);
         if (!response) {
           return;
         }
 
-        if (onLayerAdd) {
-          onLayerAdd(response);
-        }
-
         hide();
-        addSuccessToast(t('Annotation template created'));
-      });
+        addSuccessToast(t('Annotation template updated'));
+      }
+    } else if (currentLayer) {
+      // Create
+      const response = await createResource(currentLayer);
+      if (!response) {
+        return;
+      }
+
+      if (onLayerAdd) {
+        onLayerAdd(response);
+      }
+
+      hide();
+      addSuccessToast(t('Annotation template created'));
     }
   };
 

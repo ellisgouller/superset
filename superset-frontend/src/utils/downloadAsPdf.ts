@@ -49,7 +49,7 @@ export default function downloadAsPdf(
   description: string,
   isExactSelector = false,
 ) {
-  return (event: SyntheticEvent) => {
+  return async (event: SyntheticEvent) => {
     const elementToPrint = isExactSelector
       ? document.querySelector(selector)
       : event.currentTarget.closest(selector);
@@ -68,12 +68,11 @@ export default function downloadAsPdf(
       html2canvas: { scale: 2 },
       excludeClassNames: ['header-controls'],
     };
-    return domToPdf(elementToPrint, options)
-      .then(() => {
-        // nothing to be done
-      })
-      .catch((e: Error) => {
-        logging.error('PDF generation failed', e);
-      });
+    try {
+      await domToPdf(elementToPrint, options);
+    } catch (e) {
+      logging.error('PDF generation failed', e as Error);
+    }
+    return undefined;
   };
 }

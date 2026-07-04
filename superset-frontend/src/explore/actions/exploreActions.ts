@@ -64,18 +64,17 @@ export function toggleFaveStar(isStarred: boolean) {
 
 export const FETCH_FAVE_STAR = 'FETCH_FAVE_STAR';
 export function fetchFaveStar(sliceId: string) {
-  return function (dispatch: Dispatch) {
-    SupersetClient.get({
+  return async function (dispatch: Dispatch) {
+    const { json } = await SupersetClient.get({
       endpoint: `/api/v1/chart/favorite_status/?q=${rison.encode([sliceId])}`,
-    }).then(({ json }) => {
-      dispatch(toggleFaveStar(!!json?.result?.[0]?.value));
     });
+    dispatch(toggleFaveStar(!!json?.result?.[0]?.value));
   };
 }
 
 export const SAVE_FAVE_STAR = 'SAVE_FAVE_STAR';
 export function saveFaveStar(sliceId: string, isStarred: boolean) {
-  return function (dispatch: Dispatch) {
+  return async function (dispatch: Dispatch) {
     const endpoint = `/api/v1/chart/${sliceId}/favorites/`;
     const apiCall = isStarred
       ? SupersetClient.delete({
@@ -83,13 +82,14 @@ export function saveFaveStar(sliceId: string, isStarred: boolean) {
         })
       : SupersetClient.post({ endpoint });
 
-    apiCall
-      .then(() => dispatch(toggleFaveStar(!isStarred)))
-      .catch(() => {
-        dispatch(
-          addDangerToast(t('An error occurred while starring this chart')),
-        );
-      });
+    try {
+      await apiCall;
+      dispatch(toggleFaveStar(!isStarred));
+    } catch {
+      dispatch(
+        addDangerToast(t('An error occurred while starring this chart')),
+      );
+    }
   };
 }
 

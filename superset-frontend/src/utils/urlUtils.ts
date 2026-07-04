@@ -159,17 +159,18 @@ export type PermalinkResult = {
   url: string;
 };
 
-function getPermalink(
+async function getPermalink(
   endpoint: string,
   jsonPayload: JsonObject,
 ): Promise<PermalinkResult> {
-  return SupersetClient.post({
+  const result = await SupersetClient.post({
     endpoint,
     jsonPayload,
-  }).then(result => ({
+  });
+  return {
     key: result.json.key as string,
     url: result.json.url as string,
-  }));
+  };
 }
 
 /**
