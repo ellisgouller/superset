@@ -266,7 +266,7 @@ class Database(CoreDatabase, AuditMixinNullable, ImportExportMixin):  # pylint: 
     @property
     def allows_cost_estimate(self) -> bool:
         extra = self.get_extra() or {}
-        cost_estimate_enabled: bool = extra.get("cost_estimate_enabled")  # type: ignore
+        cost_estimate_enabled: bool = bool(extra.get("cost_estimate_enabled"))
 
         return (
             self.db_engine_spec.get_allow_cost_estimate(extra) and cost_estimate_enabled

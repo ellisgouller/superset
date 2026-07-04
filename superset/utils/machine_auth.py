@@ -18,7 +18,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Any, Callable, TYPE_CHECKING
+from typing import Any, Callable, cast, TYPE_CHECKING
 from urllib.parse import urlparse
 
 from flask import current_app as app, Flask, request, Response, session
@@ -157,4 +157,4 @@ class MachineAuthProviderFactory:
 
     @property
     def instance(self) -> MachineAuthProvider:
-        return self._auth_provider  # type: ignore
+        return cast(MachineAuthProvider, self._auth_provider)
