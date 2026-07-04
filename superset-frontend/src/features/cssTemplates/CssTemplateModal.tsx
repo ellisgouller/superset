@@ -107,7 +107,7 @@ const CssTemplateModal: FunctionComponent<CssTemplateModalProps> = ({
     setCurrentCssTemplate(null);
   };
 
-  const onSave = () => {
+  const onSave = async () => {
     if (isEditMode) {
       // Edit
       if (currentCssTemplate?.id) {
@@ -117,21 +117,7 @@ const CssTemplateModal: FunctionComponent<CssTemplateModalProps> = ({
         delete currentCssTemplate.changed_by;
         delete currentCssTemplate.changed_on_delta_humanized;
 
-        updateResource(update_id, currentCssTemplate).then(response => {
-          if (!response) {
-            return;
-          }
-
-          if (onCssTemplateAdd) {
-            onCssTemplateAdd();
-          }
-
-          hide();
-        });
-      }
-    } else if (currentCssTemplate) {
-      // Create
-      createResource(currentCssTemplate).then(response => {
+        const response = await updateResource(update_id, currentCssTemplate);
         if (!response) {
           return;
         }
@@ -141,7 +127,19 @@ const CssTemplateModal: FunctionComponent<CssTemplateModalProps> = ({
         }
 
         hide();
-      });
+      }
+    } else if (currentCssTemplate) {
+      // Create
+      const response = await createResource(currentCssTemplate);
+      if (!response) {
+        return;
+      }
+
+      if (onCssTemplateAdd) {
+        onCssTemplateAdd();
+      }
+
+      hide();
     }
   };
 

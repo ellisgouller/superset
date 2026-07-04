@@ -53,7 +53,7 @@ export function setDatasource(datasource: Datasource, key: string) {
 }
 
 export function fetchDatasourceMetadata(key: string) {
-  return (dispatch: Dispatch, getState: () => RootState) => {
+  return async (dispatch: Dispatch, getState: () => RootState) => {
     const { datasources } = getState();
     const datasource = datasources[key];
 
@@ -61,8 +61,9 @@ export function fetchDatasourceMetadata(key: string) {
       return dispatch(setDatasource(datasource, key));
     }
 
-    return SupersetClient.get({
+    const { json } = await SupersetClient.get({
       endpoint: `/fetch_datasource_metadata?datasourceKey=${key}`,
-    }).then(({ json }) => dispatch(setDatasource(json as Datasource, key)));
+    });
+    return dispatch(setDatasource(json as Datasource, key));
   };
 }
