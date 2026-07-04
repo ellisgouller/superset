@@ -18,7 +18,7 @@ import contextlib
 import logging
 from collections import defaultdict
 from functools import wraps
-from typing import Any, Callable, DefaultDict, Optional, Union
+from typing import Any, Callable, cast, DefaultDict, Optional, Union
 from urllib import parse
 
 import msgpack
@@ -121,7 +121,7 @@ def sanitize_datasource_data(
         if datasource_database:
             datasource_database["parameters"] = {}
 
-    return datasource_data  # type: ignore[return-value]
+    return cast(dict[str, Any], datasource_data)
 
 
 def bootstrap_user_data(user: User, include_perms: bool = False) -> dict[str, Any]:
